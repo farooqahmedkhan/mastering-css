@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout: Exercise 01</title>
+</head>
+<body>
+    <section class="w-full bg-gray-100 py-12 px-4 flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-8 text-center">Why Choose Us</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
+                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">🎯</span>
+                <h2 class="text-lg mb-2 font-semibold">Fast Delivery</h2>
+                <p class="text-sm text-gray-600">We deliver in under 24 hours.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
+                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">🔒</span>
+                <h2 class="text-lg mb-2 font-semibold">Secure</h2>
+                <p class="text-sm text-gray-600">Your data is fully protected.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
+                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">⚙️</span>
+                <h2 class="text-lg mb-2 font-semibold">Easy Setup</h2>
+                <p class="text-sm text-gray-600">Get started in minutes.</p>
+            </div>            
+        </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
