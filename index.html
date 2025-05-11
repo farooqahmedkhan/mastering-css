@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Layout: Exercise 01</title>
+    <title>Master CSS</title>
 </head>
 <body>
+    <!-- Example 1: Box Layout -->
+    <section class="relative bg-cover w-full min-h-screen bg-no-repeat bg-center" style="background-image: url('https://images.unsplash.com/photo-1553034545-32d4cd2168f1')">
+        <div class="absolute bg-black/60 inset-0 items-center justify-center flex flex-col">
+            <h1 class="text-3xl md:text-6xl font-bold mb-4 text-white">Welcome to TeamPulse</h1>
+            <p class="text-md md:text-xl mb-6 text-white">Streamline your team's productivity</p>
+            <button class="px-4 py-2 bg-blue-600 rounded-lg shadow hover:bg-blue-700 text-white font-semibold transition duration-300">Get Started</button>            
+        </div>
+    </section>
+    <!-- Example 02: Box Layout -->
     <section class="w-full bg-gray-100 py-12 px-4 flex flex-col items-center">
         <h1 class="text-4xl font-bold mb-8 text-center">Why Choose Us</h1>
 
@@ -31,7 +40,7 @@
                 <p class="text-sm text-gray-600">Get started in minutes.</p>
             </div>            
         </div>
-    </section>
+    </section>    
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
