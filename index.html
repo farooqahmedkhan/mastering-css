@@ -3,136 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master CSS</title>
+    <title>Learning CSS Using Tailwind For My Product</title>
 </head>
-<body>    
-    <!-- Example 02: Box Layout -->
-    <section class="relative bg-cover w-full min-h-screen bg-no-repeat bg-center" style="background-image: url('https://images.unsplash.com/photo-1553034545-32d4cd2168f1')">
-        <div class="absolute bg-black/60 inset-0 items-center justify-center flex flex-col">
-            <h1 class="text-3xl md:text-6xl font-bold mb-4 text-white">Mastering CSS</h1>
-            <p class="text-md md:text-xl mb-6 text-white">Examples of CSS Layouts</p>
-            <button class="px-4 py-2 bg-blue-600 rounded-lg shadow hover:bg-blue-700 text-white font-semibold transition duration-300 ">Get Started</button>
+<body>        
+    <div class="w-full min-h-screen flex flex-col md:flex-row">
+        <nav class="items-center md:min-h-screen">
+            <div class="bg-gray-800 text-white p-4">
+                <h1 class="text-lg font-bold text-center">Mastering CSS</h1>
+            </div>
+            <ul class="items-center">
+                <li class="p-4 border-b border-gray-300 hover:shadow-lg cursor-pointer hover:font-bold hover:text-red-600 transition-all duration-300">
+                    <span data-url="./boxlayout.html">Box Layout</span>
+                </li>
+                <li class="p-4 border-b border-gray-300 hover:shadow-lg cursor-pointer hover:font-bold hover:text-red-600 transition-all duration-300">
+                    <span data-url="./gridayout.html">Grid Layout</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="w-full flex flex-col min-h-screen p-4">
+            <div class="bg-gray-100 p-4 mb-4">
+                <h1 class="text-2xl font-bold">Welcome to Mastering CSS</h1>
+                <p class="text-md">Click on item in left navigation to view example</p>
+            </div>
+            <iframe id="content-frame" class="w-full h-full" src="" frameborder="0"></iframe>
         </div>
-    </section>
-    <!-- Example 01: Box Layout -->        
-    <section class="w-full h-2/6 bg-gray-100 py-12 px-4 flex flex-col items-center">
-        <h1 class="text-4xl font-bold mb-8 text-center">Why Choose Us</h1>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
-            <!-- Card 1 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">🎯</span>
-                <h2 class="text-lg mb-2 font-semibold">Fast Delivery</h2>
-                <p class="text-sm text-gray-600">We deliver in under 24 hours.</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">🔒</span>
-                <h2 class="text-lg mb-2 font-semibold">Secure</h2>
-                <p class="text-sm text-gray-600">Your data is fully protected.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">⚙️</span>
-                <h2 class="text-lg mb-2 font-semibold">Easy Setup</h2>
-                <p class="text-sm text-gray-600">Get started in minutes.</p>
-            </div>            
-        </div>
-    </section>  
-     
-    <!-- Example 03: Box Layout  -->
-     <section class="w-full bg-white py-12 px-4 items-center">
-        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl w-full">            
-            <div>
-                <img src="https://plus.unsplash.com/premium_photo-1723536743820-f37be8e39917" alt="Image" class="w-full h-full object-cover shadow-lg rounded-lg">
-            </div>
-            <div class="w-full">
-                <h1 class="text-2xl md:text-4xl font-bold mb-4 text-gray-800">All-in-One Team Management</h1>
-                <p class="text-md md:text-lg mb-6 text-gray-600 text-justify">Collaborate, plan, and execute effortlessly. TeamPulse helps you stay in sync and scale your team without chaos.</p>
-                <button class="px-4 py-2 bg-blue-600 rounded-lg shadow hover:bg-blue-700 text-white font-semibold transition duration-300">Learn More</button>
-            </div>
-        </div>
-     </section>
-     <!-- Example 04: Box Layout -->
-     <section class="w-full flex flex-col items-center justify-center bg-gray-100 py-12 px-4">
-        <h1 class="text-2xl md:text-4xl font-bold mb-4 shadow-xl">Powerful Features</h1>
-        <p>Everything you need to manage your team efficiently</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-8">
-            <!-- Feature 1 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">📈</span>
-                <h2 class="text-lg mb-2 font-semibold">Analytics Dashboard</h2>
-                <p class="text-sm text-gray-600">Track performance and insights to make data driven decisions.</p>
-            </div>
-            
-            <!-- Feature 2 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">🤝</span>
-                <h2 class="text-lg mb-2 font-semibold">Team Collaboration</h2>
-                <p class="text-sm text-gray-600">Work together in real-time with shared tasks, chats, and calendars.</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="p-6 bg-white shadow rounded-lg text-center items-center flex flex-col">
-                <span class="w-12 h-12 text-2xl bg-blue-200 rounded-full justify-center mb-4 flex items-center">⚙️</span>
-                <h2 class="text-lg mb-2 font-semibold">Custom Workflows</h2>
-                <p class="text-sm text-gray-600">Automate repititive tasks and create tailored Workflows to boost efficiency.</p>
-            </div>
-     </section>
-     <!-- Example 05: Box Layout -->
-     <section class="w-full flex flex-col items-center justify-center bg-gray-100 py-12 px-4 mt-1">
-        <h1 class="text-2xl md:text-4xl font-bold mb-4">Our Services</h1>        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-8">
-            <!-- Service 1 -->
-            <div class="p-6 bg-white shadow rounded-lg text-left items-start flex flex-col">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">🚀</span>
-                <h2 class="text-lg mb-2 font-semibold">Launch Fast</h2>
-                <p class="text-sm text-gray-600">Get your projects up and running in no time with our streamlined tools.</p>
-                <a href="#" class="mt-4 text-blue-600 hover:underline">Learn More →</a>
-            </div>
-            <!-- Service 2 -->
-            <div class="p-6 bg-white shadow rounded-lg text-left items-start flex flex-col">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">🔐</span>
-                <h2 class="text-lg mb-2 font-semibold">Secure Data</h2>
-                <p class="text-sm text-gray-600">Top-tier encryption and backups to keep your data safe and sound.</p>
-                <a href="#" class="mt-4 text-blue-600 hover:underline">Learn More →</a>
-            </div>
-            <!-- Service 3 -->
-            <div class="p-6 bg-white shadow rounded-lg text-left items-start flex flex-col">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">⚙️</span>
-                <h2 class="text-lg mb-2 font-semibold">Customizable</h2>
-                <p class="text-sm text-gray-600">Tweak and tune features to match your unique team workflows.</p>
-                <a href="#" class="mt-4 text-blue-600 hover:underline">Learn More →</a>
-            </div>
-     </section>
-     <!-- Example 06: Box Layout -->
-     <section class="w-full flex flex-col items-center justify-center bg-gray-100 py-12 px-4 mt-1">
-        <h1 class="text-2xl md:text-4xl font-bold mb-4">Our Services</h1>        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-8">
-            <!-- Service 1 -->
-            <div class="p-6 bg-white rounded-lg text-left items-start flex flex-col min-h-[300px] shadow-lg transition-all duration-300 hover:border-l-4 hover:border-blue-500">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">🚀</span>
-                <h2 class="text-lg mb-2 font-semibold">Launch Fast</h2>
-                <p class="text-sm text-gray-600 line-clamp-3">Get your projects up and running in no time with our streamlined tools that help your team build, test, and deploy efficiently.</p>
-                <a href="#" class="mt-auto text-blue-600 hover:underline">Learn More →</a>
-            </div>
-            <!-- Service 2 -->
-            <div class="p-6 bg-white rounded-lg text-left items-start flex flex-col min-h-[300px] shadow-lg transition-all duration-300 hover:border-l-4 hover:border-blue-500">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">🔐</span>
-                <h2 class="text-lg mb-2 font-semibold">Secure Data</h2>
-                <p class="text-sm text-gray-600 line-clamp-3">Top-tier encryption and automatic backups ensure your data stays safe and recoverable, even during unexpected outages.</p>
-                <a href="#" class="mt-auto text-blue-600 hover:underline">Learn More →</a>
-            </div>
-            <!-- Service 3 -->
-            <div class="p-6 bg-white rounded-lg text-left items-start flex flex-col min-h-[300px] shadow-lg transition-all duration-300 hover:border-l-4 hover:border-blue-500">
-                <span class="w-12 h-12 text-4xl justify-left mb-4 flex items-center">⚙️</span>
-                <h2 class="text-lg mb-2 font-semibold">Customizable</h2>
-                <p class="text-sm text-gray-600 line-clamp-3">Tweak and tune features to match your unique team workflows. Everything is modular and developer-friendly.</p>
-                <a href="#" class="mt-auto text-blue-600 hover:underline">Learn More →</a>
-            </div>
-     </section>
+    </div>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // ul li span click event
+        document.querySelectorAll('ul li span').forEach(item => {
+            item.addEventListener('click', event => {
+                const url = event.target.getAttribute('data-url');
+                document.getElementById('content-frame').src = url;
+            });
+        });
+    </script>
 </body>
 </html>
