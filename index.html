@@ -9,11 +9,16 @@
     <div class="w-full min-h-screen flex flex-col md:flex-row">
         <nav class="items-center md:min-h-screen">
             <div class="bg-gray-800 text-white p-4">
-                <h1 class="text-lg font-bold text-center">Mastering CSS</h1>
+                <h1 class="text-lg font-bold text-center">Mastering CSS</h1>                                
             </div>
             <ul class="items-center">
-                <li class="p-4 border-b border-gray-300 hover:shadow-lg cursor-pointer hover:font-bold hover:text-red-600 transition-all duration-300">
-                    <span data-url="./boxlayout.html">Box Layout</span>
+                <li class="p-4 border-b border-gray-300">
+                    <span class="hover:shadow-lg cursor-pointer transition-all duration-300" data-url="./boxlayout.html">Box Layout</span>
+                    <ul class="text-xs">
+                        <li class="p-2">
+                            <span class="hover:shadow-lg cursor-pointer transition-all duration-300" data-url="./box/notion-clone.html">Notion Clone</span>
+                        </li>
+                    </ul>
                 </li>
                 <li class="p-4 border-b border-gray-300 hover:shadow-lg cursor-pointer hover:font-bold hover:text-red-600 transition-all duration-300">
                     <span data-url="./gridayout.html">Grid Layout</span>
@@ -21,8 +26,11 @@
             </ul>
         </nav>
         <div class="w-full flex flex-col min-h-screen p-4">
-            <div class="bg-gray-100 p-4 mb-4">
-                <h1 class="text-2xl font-bold">Welcome to Mastering CSS</h1>
+            <div class="bg-gray-100 p-4 mb-4">                
+                <div class="flex justify-between items-center">
+                    <h1 class="text-2xl font-bold">Welcome to Mastering CSS</h1>
+                    <button id="refresh-button" class="px-4 py-2 bg-blue-600 rounded-lg shadow hover:bg-blue-700 text-white font-semibold transition duration-300">Refresh</button>
+                </div>
                 <p class="text-md">Click on item in left navigation to view example</p>
             </div>
             <iframe id="content-frame" class="w-full min-h-screen md:h-full" src="" frameborder="0"></iframe>
@@ -30,12 +38,22 @@
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // ul li span click event
+        /**
+         * This script handles the click events on the navigation items.
+         * When an item is clicked, it retrieves the URL from the data-url attribute
+         * and sets it as the source of the iframe.
+         */        
         document.querySelectorAll('ul li span').forEach(item => {
             item.addEventListener('click', event => {
                 const url = event.target.getAttribute('data-url');
                 document.getElementById('content-frame').src = url;
             });
+        });
+
+        // iframe refresh button client
+        document.getElementById('refresh-button').addEventListener('click', () => {
+            const currentSrc = document.getElementById('content-frame').src;
+            document.getElementById('content-frame').src = currentSrc;
         });
     </script>
 </body>

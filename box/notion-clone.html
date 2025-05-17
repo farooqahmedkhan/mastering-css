@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your connected workspace for wiki, docs & projects | Notion</title>
+</head>
+<body class="bg-white">    
+    <!-- Notification -->
+    <div class="p-2 w-full h-10 bg-zinc-100 text-center items-center justify-center text-sm">
+        <p>
+            All in one AI, right where you work.&nbsp;
+            <a href="https://www.notion.so/product/ai" class="text-gray-700 font-semibold hover:underline hover:text-blue-500">Try Notion AI Free →</a>
+        </p>
+        <span class="absolute top-2 right-2 cursor-pointer" id="close-notification">
+            <svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" class="close" style="width: 22px; height: 22px; display: block; fill: var(--color-black); flex-shrink: 0;"><path d="M2.89795 13.3428C3.18799 13.6262 3.6626 13.6262 3.93945 13.3494L7.99341 9.29541L12.0474 13.3494C12.3308 13.6262 12.8054 13.6328 13.0889 13.3428C13.3723 13.0593 13.3723 12.5847 13.0955 12.3079L9.0415 8.24731L13.0955 4.19336C13.3723 3.9165 13.3789 3.4353 13.0889 3.15845C12.7988 2.875 12.3308 2.875 12.0474 3.15186L7.99341 7.20581L3.93945 3.15186C3.6626 2.875 3.1814 2.86841 2.89795 3.15186C2.6145 3.44189 2.62109 3.9231 2.89795 4.19336L6.9519 8.24731L2.89795 12.3079C2.62109 12.5781 2.6145 13.0659 2.89795 13.3428Z"></path></svg>
+        </span>
+    </div>
+    <header class="w-full py-4 px-6 flex flex-row">
+        <span class="w-1/6">
+            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81 1.294L18.446.068c2.043-.175 2.568-.057 3.852.875l5.311 3.733c.877.642 1.169.817 1.169 1.516v20.473c0 1.283-.468 2.042-2.102 2.158L7.357 29.99c-1.228.058-1.811-.117-2.454-.934l-3.91-5.074C.29 23.048 0 22.349 0 21.532V3.334c0-1.049.468-1.924 1.81-2.04z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.447.068L1.808 1.294C.468 1.41 0 2.285 0 3.334v18.198c0 .817.291 1.516.992 2.45l3.911 5.074c.643.817 1.226.992 2.453.934l19.321-1.167c1.634-.116 2.102-.875 2.102-2.158V6.192c0-.663-.263-.854-1.037-1.42l-.132-.096L22.3.943c-1.285-.932-1.81-1.05-3.854-.875zM7.793 5.857c-1.577.106-1.936.13-2.831-.597L2.685 3.452c-.233-.234-.116-.526.467-.584l15.995-1.166c1.342-.117 2.043.35 2.568.758l2.744 1.983c.117.059.408.408.058.408l-16.52.992-.203.014zM5.954 26.49V9.11c0-.759.234-1.109.934-1.168l18.971-1.108c.643-.058.935.35.935 1.108v17.264c0 .759-.117 1.401-1.168 1.459l-18.154 1.05c-1.05.058-1.518-.291-1.518-1.225zm17.922-16.448c.116.525 0 1.05-.527 1.11l-.874.173v12.832c-.76.408-1.46.641-2.044.641-.934 0-1.168-.292-1.868-1.166l-5.721-8.982v8.69l1.81.409s0 1.05-1.46 1.05l-4.027.233c-.117-.234 0-.817.408-.933l1.051-.291v-11.49L9.165 12.2c-.117-.525.174-1.283.992-1.341l4.32-.292 5.954 9.1v-8.05l-1.518-.174c-.116-.643.35-1.109.934-1.167l4.029-.234z" fill="#000"></path></svg>
+        </span>
+        <nav class="w-4/6 items-center justify-center flex-row hidden lg:flex">
+            <ul class="flex flex-row items-center justify-center">
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2 group">
+                    <span>Notion</span>
+                    <span class="w-3 h-3 flex items-center justify-center visible group-hover:invisible">
+                        <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"></path>
+                        </svg>
+                    </span>
+                    <span class="w-3 h-3 flex items-center justify-center invisible group-hover:visible">
+                        <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"></path>
+                        </svg>
+                    </span>      
+                    <div class="absolute top-10 left-0 w-full py-64 shadow-lg invisible group-hover:visible transition duration-1500"></div>              
+                </li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2">
+                    <span>Mail</span>
+                    <small class="p-[2px] bg-gray-200 text-blue-400 text-xs rounded-sm font-semibold">New</small>
+                </li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Calendar</li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">AI</li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Enterprise</li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Pricing</li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2">
+                    <span>Explore</span>
+                    <span class="w-3 h-3 flex items-center justify-center">
+                        <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"></path>
+                        </svg>
+                    </span>
+                </li>
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Request a demo</li>
+            </ul>
+        </nav>        
+        <div class="w-5/6 lg:w-1/6 items-center flex flex-row justify-end gap-3">
+            <span class="hover:bg-gray-200 px-2 py-1 rounded-md transition duration-300 cursor-pointer">Log in</span>
+            <button class="px-4 py-1 bg-black rounded-md shadow hover:bg-gray-800 text-white transition duration-300">Get Notion Free</button>
+        </div>
+    </header>    
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
