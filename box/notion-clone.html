@@ -20,7 +20,7 @@
         <span class="w-1/6">
             <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81 1.294L18.446.068c2.043-.175 2.568-.057 3.852.875l5.311 3.733c.877.642 1.169.817 1.169 1.516v20.473c0 1.283-.468 2.042-2.102 2.158L7.357 29.99c-1.228.058-1.811-.117-2.454-.934l-3.91-5.074C.29 23.048 0 22.349 0 21.532V3.334c0-1.049.468-1.924 1.81-2.04z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.447.068L1.808 1.294C.468 1.41 0 2.285 0 3.334v18.198c0 .817.291 1.516.992 2.45l3.911 5.074c.643.817 1.226.992 2.453.934l19.321-1.167c1.634-.116 2.102-.875 2.102-2.158V6.192c0-.663-.263-.854-1.037-1.42l-.132-.096L22.3.943c-1.285-.932-1.81-1.05-3.854-.875zM7.793 5.857c-1.577.106-1.936.13-2.831-.597L2.685 3.452c-.233-.234-.116-.526.467-.584l15.995-1.166c1.342-.117 2.043.35 2.568.758l2.744 1.983c.117.059.408.408.058.408l-16.52.992-.203.014zM5.954 26.49V9.11c0-.759.234-1.109.934-1.168l18.971-1.108c.643-.058.935.35.935 1.108v17.264c0 .759-.117 1.401-1.168 1.459l-18.154 1.05c-1.05.058-1.518-.291-1.518-1.225zm17.922-16.448c.116.525 0 1.05-.527 1.11l-.874.173v12.832c-.76.408-1.46.641-2.044.641-.934 0-1.168-.292-1.868-1.166l-5.721-8.982v8.69l1.81.409s0 1.05-1.46 1.05l-4.027.233c-.117-.234 0-.817.408-.933l1.051-.291v-11.49L9.165 12.2c-.117-.525.174-1.283.992-1.341l4.32-.292 5.954 9.1v-8.05l-1.518-.174c-.116-.643.35-1.109.934-1.167l4.029-.234z" fill="#000"></path></svg>
         </span>
-        <nav class="w-4/6 items-center justify-center flex-row hidden lg:flex">
+        <nav class="w-4/6 items-center justify-center flex-row hidden xl:flex">
             <ul class="flex flex-row items-center justify-center">
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-[5px] transition duration-400 cursor-pointer flex flex-row items-center gap-2 group">
                     <span>Notion</span>
@@ -33,68 +33,74 @@
                         <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"></path>
                         </svg>
-                    </span>      
-                    <!-- invisible group-hover:visible -->
-                    <div class="absolute px-24 py-4 grid grid-cols-2 md:grid-cols-3 gap-1 border-2 border-red-400 top-24 left-0 w-full shadow-lg transition duration-500">
+                    </span>                          
+                    <div class="absolute pl-[7rem] py-6 grid grid-cols-3 xl:grid-cols-4 gap-4 top-24 left-0 w-full shadow-lg transition duration-500 invisible group-hover:visible">
                         <section class="flex flex-col rounded-md">
-                            <h1 class="text-gray-400">Features</h1>
-                            <div class="w-full py-1 grid grid-cols-2 gap-1">
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Notion AI</h2>
-                                    <p class="text-gray-400 text-sm">Build, write, automate</p>
+                            <h1 class="text-gray-500 text-sm font-medium">Features</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Notion AI</h2>
+                                    <p class="text-gray-400 text-xs">Build, write, automate</p>
                                 </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Docs</h2>
-                                    <p class="text-gray-400 text-sm">Simple & powerful</p>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Docs</h2>
+                                    <p class="text-gray-400 text-xs">Simple & powerful</p>
                                 </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Wikis</h2>
-                                    <p class="text-gray-400 text-sm">Centralize your knowledge</p>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Wikis</h2>
+                                    <p class="text-gray-400 text-xs">Centralize your knowledge</p>
                                 </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Projects</h2>
-                                    <p class="text-gray-400 text-sm">Manage any project</p>
-                                </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Enterprise Search</h2>
-                                    <p class="text-gray-400 text-sm">Find answers instantly</p>
-                                </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">AI Meeting Notes</h2>
-                                    <p class="text-gray-400 text-sm">Perfectly written by AI</p>
-                                </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Forms</h2>
-                                    <p class="text-gray-400 text-sm">Responses and requests</p>
-                                </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Sites</h2>
-                                    <p class="text-gray-400 text-sm">Publish anything, fast</p>
-                                </div>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Projects</h2>
+                                    <p class="text-gray-400 text-xs">Manage any project</p>
+                                </div>                                
                             </div>
                         </section>
-                        <!-- <section class="p-6 flex flex-col items-start justify-start">
-                            <h1 class="text-gray-400">Get Started</h1>
-                            <div class="py-4 grid grid-cols-1 gap-2">
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Browse Marketplace</h2>
-                                    <p class="text-gray-400 text-sm">Templates for everything</p>
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium mb-5"></h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Enterprise Search</h2>
+                                    <p class="text-gray-400 text-xs">Find answers instantly</p>
                                 </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">View Integrations</h2>
-                                    <p class="text-gray-400 text-sm">Connect your apps with Notion</p>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">AI Meeting Notes</h2>
+                                    <p class="text-gray-400 text-xs">Perfectly written by AI</p>
                                 </div>
-                                <div class="hover:bg-gray-200 rounded-md p-4 flex flex-col items-start justify-start">
-                                    <h2 class="text-xl font-bold">Download web clipper</h2>
-                                    <p class="text-gray-400 text-sm">Save from web into Notion</p>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Forms</h2>
+                                    <p class="text-gray-400 text-xs">Responses and requests</p>
                                 </div>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Sites</h2>
+                                    <p class="text-gray-400 text-xs">Publish anything, fast</p>
+                                </div>                              
+                            </div>
+                        </section>                        
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium">Get started</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-sm font-medium">Browse marketplace</h2>
+                                    <p class="text-gray-400 text-xs">Templates for everything</p>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-sm font-medium">View integrations</h2>
+                                    <p class="text-gray-400 text-xs">Connect your apps with Notion</p>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md p-2 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-sm font-medium">Download web clipper</h2>
+                                    <p class="text-gray-400 text-xs">Save from web into Notion</p>
+                                </div>                                               
                             </div>
                         </section>
-                        <section class="p-6 flex flex-col items-start justify-start">
-                            <h1 class="text-gray-400">Try the Notion Desktop app for a faster experience</h1>
-                            <img src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fmeta%2Fstartups_background.png&w=256&q=75" alt="Notion Desktop App" class="w-1/2 mt-4">
-                            <button class="px-4 py-1 bg-black rounded-md shadow hover:bg-gray-800 text-white transition duration-300">Download app</button>
-                        </section> -->
+                        <section class="p-2 flex flex-col items-start justify-start">
+                            <div class="bg-gray-100 px-4 py-4 w-full xl:w-3/4 rounded-md flex flex-col items-start justify-start">
+                                <h1 class="text-black font-medium">Try the Notion Desktop app for a faster experience</h1>
+                                <button class="px-5 py-1 mt-2 bg-blue-600 rounded-md shadow hover:bg-gray-800 text-white transition duration-300">Download app</button>
+                                <img src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fmeta%2Fstartups_background.png&w=256&q=75" alt="Notion Desktop App" class="w-1/2 mt-4">
+                            </div>
+                        </section>
                     </div>
                 </li>
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2">
@@ -116,9 +122,9 @@
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Request a demo</li>
             </ul>
         </nav>        
-        <div class="w-5/6 lg:w-1/6 items-center flex flex-row justify-end gap-3">
-            <span class="hover:bg-gray-200 px-2 py-1 rounded-md transition duration-300 cursor-pointer">Log in</span>
-            <button class="px-4 py-1 bg-black rounded-md shadow hover:bg-gray-800 text-white transition duration-300">Get Notion Free</button>
+        <div class="w-5/6 xl:w-1/6 items-center flex flex-row justify-end gap-1">
+            <span class="hover:bg-gray-200 px-2 py-1 rounded-md transition duration-300 cursor-pointer text-sm lg:text-md">Log in</span>
+            <button class="px-4 py-1 bg-black rounded-md shadow hover:bg-gray-800 text-white transition duration-300 text-sm lg:text-md">Get Notion Free</button>
         </div>
     </header>    
     <script src="https://cdn.tailwindcss.com"></script>
