@@ -22,7 +22,7 @@
         </span>
         <nav class="w-4/6 items-center justify-center flex-row hidden xl:flex">
             <ul class="flex flex-row items-center justify-center">
-                <li class="px-4 py-1 hover:bg-gray-200 rounded-[5px] transition duration-400 cursor-pointer flex flex-row items-center gap-2 group">
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2 group">
                     <span>Notion</span>
                     <span class="w-3 h-3 flex items-center justify-center group-hover:hidden">
                         <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -112,13 +112,89 @@
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">AI</li>
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Enterprise</li>
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Pricing</li>
-                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2">
+                <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer flex flex-row items-center gap-2 group">
                     <span>Explore</span>
-                    <span class="w-3 h-3 flex items-center justify-center">
+                    <span class="w-3 h-3 flex items-center justify-center group-hover:hidden">
                         <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path clip-rule="evenodd" fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"></path>
                         </svg>
                     </span>
+                    <span class="w-3 h-3 flex items-center justify-center hidden group-hover:flex">
+                        <svg data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"></path>
+                        </svg>
+                    </span>
+                    <!-- DropDown -->
+                    <div class="absolute pl-[7rem] py-6 grid grid-cols-3 xl:grid-cols-4 gap-4 top-24 left-0 w-full shadow-lg transition duration-500 invisible group-hover:visible">
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium mb-4">Teams</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Eng & Product</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Design</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Marketing</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">IT</h2>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium mb-4">Team size</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Startups</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">SMBs</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Enterprise</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md py-1 flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-2xl font-bold">Education</h2>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium mb-4">Learn</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Help center</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Customer stories</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Blog</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Community</h2>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="flex flex-col rounded-md">
+                            <h1 class="text-gray-500 text-sm font-medium mb-4">Build</h1>
+                            <div class="w-full py-1 flex flex-col">
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">API</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Templates</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Security</h2>
+                                </div>
+                                <div class="hover:bg-gray-200 rounded-md flex flex-col items-start justify-start transition duration-500">
+                                    <h2 class="text-md">Consultants</h2>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </li>
                 <li class="px-4 py-1 hover:bg-gray-200 rounded-md transition duration-400 cursor-pointer">Request a demo</li>
             </ul>
